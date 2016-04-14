@@ -11,7 +11,7 @@ import javax.ejb.Stateless;
  * @author franzfallavier
  * 
  */
-@Stateless
+//@Stateless
 public class EJBDummyLoginAuthenticator implements LoginAuthenticator {
 
 	private static final String PASSWORD_ADMIN = "admin";
