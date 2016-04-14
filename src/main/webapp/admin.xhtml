@@ -12,7 +12,7 @@
 	   Bienvenue sur la page de gestion du zoo
 	</ui:define>
 	<ui:define name="content">
-	<!-- Form for all button -->
+		<!-- Form for all button -->
 		<h:form>
 			<h:messages />
 			<p:panelGrid columns="2">
@@ -20,9 +20,9 @@
 					action="#{enclosureController.showEnclosuresClicked}" />
 				<h:commandButton value="Show Animals"
 					action="#{animalController.showAnimalsClicked}" />
-			</p:panelGrid>		
+			</p:panelGrid>
 		</h:form>
-		
+
 		<h:form>
 			<h:messages />
 			<p:panelGrid columns="1">
@@ -30,15 +30,7 @@
 					action="#{enclosureController.goToNewEnclosure}" />
 			</p:panelGrid>
 		</h:form>
-		
-		<h:form>
-			<h:messages />
-			<p:panelGrid columns="1">
-				<h:commandButton value="Add Enclosure"
-					action="#{enclosureController.goToNewEnclosure}" />
-			</p:panelGrid>
-		</h:form>
-		
+
 		<h:form>
 			<h:dataTable id="enclosure" value="#{enclosureController.enclosures}"
 				var="enclosure">
@@ -66,9 +58,9 @@
 					<h:outputText value="#{animal.name}" />
 				</h:column>
 			</h:dataTable>
-		</h:form>		
-		
-		
+		</h:form>
+
+
 
 	</ui:define>
 	<ui:define name="footer">
